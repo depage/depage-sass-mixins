@@ -1,0 +1,23 @@
+@mixin fixedAspectRatio($width, $height, $children: '*') {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    &::after {
+        padding-top: (100% / $width * $height);
+        display: block;
+        content: "";
+    }
+
+    > #{$children} {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// vim:set ft=scss sw=4 sts=4 fdm=marker :
