@@ -12,7 +12,7 @@
     @include prefixer(transform, $value, webkit moz ms o spec);
 }
 @mixin transform-origin($value){
-    @include prefixer(transform-orign, $value, webkit moz ms o spec);
+    @include prefixer(transform-origin, $value, webkit moz ms o spec);
 }
 @mixin rotate($degree, $origin: 50% 50%) {
     @include transform(rotate($degree));
