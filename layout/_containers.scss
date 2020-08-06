@@ -24,13 +24,15 @@
         border-right: $spacing * 0.5 solid transparent;
     }
     &:first-child {
-        margin-left: - $spacing * 0.5;
+        //margin-left: - $spacing * 0.5;
+        border-left-width: 0;
         @media screen and (max-width: $reorderWidth) {
             margin-left: 0;
         }
     }
     &:last-child {
-        margin-right: - $spacing * 0.5;
+        //margin-right: - $spacing * 0.5;
+        border-right-width: 0;
         @media screen and (max-width: $reorderWidth) {
             margin-right: 0;
         }
