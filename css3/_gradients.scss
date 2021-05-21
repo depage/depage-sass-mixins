@@ -22,13 +22,13 @@
     @if ("#{$direction}" == "to bottom") {
         $fallbackDirection: top;
         $y2: 100%;
-    } @elseif ("#{$direction}" == "to top") {
+    } @else if ("#{$direction}" == "to top") {
         $fallbackDirection: bottom;
         $y1: 100%;
-    } @elseif ("#{$direction}" == "to left") {
+    } @else if ("#{$direction}" == "to left") {
         $fallbackDirection: right;
         $x2: 100%;
-    } @elseif ("#{$direction}" == "to right") {
+    } @else if ("#{$direction}" == "to right") {
         $fallbackDirection: left;
         $x1: 100%;
     } @else {
